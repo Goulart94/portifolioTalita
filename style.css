@@ -1,0 +1,134 @@
+/*------------variaveis de cor ----------------*/
+
+:root {
+  --green-500: #009e66;
+  --black: #101010;
+  --white: #ffffff;
+}
+
+/*------------end----------------*/
+
+/*----------------ELEMENTOS GERAIS----------------------*/
+
+* {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+   justify-content: center;
+
+}
+
+button{
+    cursor: pointer;
+
+}
+
+a {
+    cursor: pointer;
+}
+
+/*-------------------end----------------------*/
+
+/*-------------------SECTION ONE----------------------*/
+.container_main{
+   height: 100vh;
+   width: 100%;
+   background: url(./images/image-header.png);
+   background-position: 7% 10%;
+   background-size: cover;
+   z-index: -1;
+   
+}
+.container_main::after{
+    content: "";
+    position: absolute;
+    top: 0; 
+    height: 100vh;
+    width: 100%;
+    background: var(--black);
+    opacity: 0.7;
+    z-index: -1;
+
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex; 
+}
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.logo img{
+    width: 50px;
+    margin-top: 10px;
+
+}
+.navbar{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+.navbar nav{
+    margin-right: 250px;
+
+}
+.navbar nav ul{
+    display: flex;
+
+}
+.navbar nav ul li{
+    
+    list-style-type: none;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.navbar nav ul li:hover{
+    color: var(--green-500);
+   
+}
+.text_main{
+    width: 60%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.text h1{
+    font-size: 50px;
+}
+.text span{
+    font-size: 30px;
+}
+.button_main{
+ width: 100%;
+ justify-content: center;
+}
+.button_main button{
+    background-color: var(--green-500);
+    width: 180px;
+    height: 50px;
+    font-size: 21px;
+    margin-top: 20px;
+
+  
+}
+/*-------------------end----------------------*/
+
+
